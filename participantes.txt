@@ -1,10 +1,10 @@
 Universidad Catolica de Honduras
 Facultad: Ingenieria en Ciencias de la Computacion
 Asignatura: Desarrollo de Portales Web 1
-Trabajo: Proyecto Final Sitio web "Autismo Siguatepeque"
+Trabajo: Proyecto Final Sitio web "Parma’s pizza"
 
 Equipo #2 (Integrantes):
-Edgardo Josue Caceres Rivera - (1606200400098) - Usuario: Edgarc575
-Guillermo Javier Agurcia Avila - (0801200406445) - Usuario: GUILLE-AV
-Cinthya Lizeth Landa Ferrufino - (0801200403695) - Usuario: LizVenus07
-
+Edgardo Josué Cáceres Rivera - (1606200400098) - Usuario: Edgarc575
+Carlos Eduardo Alvarado Mejia - (0413200200503) - Usuario: Noysen02
+Jordy Steven Pineda Pacheco - (0318200101814) - Usuario: JordySPP
+Esdras Esteban Oseguera Cáceres - (0310200200108) - Usuario: EsdrasFaik
