@@ -45,12 +45,13 @@
 
     <div class="contenedor-formulario">
         <h1>Nuestro equipo se pondrá en contacto contigo</h1>
-        <form action="https://formsubmit.co/edgardojosue456@gmail.com" method="POST" id="contactoform">
+        <form action="https://formsubmit.co/lospanitas444@gmail.com" method="POST" id="contactoform">
             <label for="txtNombre">Nombre completo:</label>
             <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" />
             <br />
             <label for="txtCorreo">Correo</label>
-            <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" />
+            <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" required
+                pattern=".*@gmail.com$" />
             <br />
             <label for="txtTelefono">Teléfono</label>
             <input type="text" name="Telefono" id="txtTelefono" placeholder="XXXX-XXXX" />
@@ -109,7 +110,7 @@
 </html>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
+    /*document.addEventListener("DOMContentLoaded", () => {
             formValidatorInit();
     });
 
@@ -126,7 +127,7 @@
         const btnEnviar = document.getElementById("btnenviar");
         //Validacion de si esta vacio, si el email es valido o si el numero de telefono es de honduras
         const isEmpty = /^\s*$/gm;
-        const isValidEmail = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm;
+        //const isValidEmail = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm;
         const isValidHonduranCelPhone = /^\+?\(?(504)?\)?\s?[389]\d{3}[\-\s]?\d{4}$/gm;
 
         btnEnviar.addEventListener("click", (e) => {
@@ -158,8 +159,8 @@
 
             //Si el num no es hondurenho
             if (isValidHonduranCelPhone.test(txttelefono.value)) {
-                alert("Error: El telefono no es un celular hondureño válido.");
-                hasErrors = true;
+               alert("Error: El telefono no es un celular hondureño válido.");
+               hasErrors = true;
             }
 
             //Si el campo esta vacio
@@ -181,7 +182,7 @@
         });
 
 
-    }
+    }*/
 
 
 
