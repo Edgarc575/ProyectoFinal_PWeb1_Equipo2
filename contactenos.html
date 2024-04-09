@@ -26,6 +26,70 @@
             </ul>
         </nav>
     </header>
+    <div class="contenedor-info">
+        <h1>Contacto</h1>
+        <div class="info">
+            <h2>Nuestro numero de teléfono: (504) 9683-3534 </h2>
+            <h2>Nuestro correo: pizza-2016@hotmail.com</h2>
+        </div>
+    </div>
+
+    <div class="contenedor-ubicacion">
+        <h1>Nuestra ubicación</h1>
+        <div class="ubicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.8188363938634!2d-88.78875068920988!3d14.779232085669017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f640948e86b65e9%3A0x5668c892e8b759a0!2sParma&#39;s%20Pizza%20Santa%20Rosa%20de%20Cop%C3%A1n!5e0!3m2!1ses-419!2shn!4v1712605729211!5m2!1ses-419!2shn"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="contenedor-formulario">
+        <h1>Nuestro equipo se pondrá en contacto contigo</h1>
+        <form action="https://formsubmit.co/lospanitas444@gmail.com" method="POST" id="contactoform">
+            <label for="txtNombre">Nombre completo:</label>
+            <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" />
+            <br />
+            <label for="txtCorreo">Correo</label>
+            <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" required
+                pattern=".*@gmail.com$" />
+            <br />
+            <label for="txtTelefono">Teléfono</label>
+            <input type="text" name="Telefono" id="txtTelefono" placeholder="XXXX-XXXX" />
+            <br />
+            <fieldset>
+                <legend>Departamento</legend>
+                <select name="Departamento">
+                    <option value="0" selected>Seleccione</option>
+                    <option value="1">Atlántida</option>
+                    <option value="2">Choluteca</option>
+                    <option value="3">Colón</option>
+                    <option value="4">Comayagua</option>
+                    <option value="5">Copán</option>
+                    <option value="6">Cortés</option>
+                    <option value="7">El Paraíso</option>
+                    <option value="8">Francisco Morazán</option>
+                    <option value="9">Gracias a Dios</option>
+                    <option value="10">Intibucá</option>
+                    <option value="11">Islas de la Bahía</option>
+                    <option value="12">La Paz</option>
+                    <option value="13">Lempira</option>
+                    <option value="14">Ocotepeque</option>
+                    <option value="15">Olancho</option>
+                    <option value="16">Santa Bárbara</option>
+                    <option value="17">Valle</option>
+                    <option value="18">Yoro</option>
+                </select>
+                <label for="txtCiudad">Ciudad:</label>
+                <input type="text" name="Ciudad" id="txtCiudad" placeholder="Ciudad" />
+                <br />
+            </fieldset>
+            <br />
+            <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario"></textarea>
+            <br />
+            <input type="submit" id="btnenviar" value="Enviar formulario">
+        </form>
+    </div>
 </body>
 <footer>
     <h1>Parma's Pizza</h1>
@@ -47,3 +111,85 @@
 </footer>
 
 </html>
+
+<script>
+    /*document.addEventListener("DOMContentLoaded", () => {
+            formValidatorInit();
+    });
+
+    function formValidatorInit() {
+        //Campos del formulario
+        const txtnombrecompleto = document.getElementById("txtNombre");
+        const txtcorreo = document.getElementById("txtCorreo");
+        const txttelefono = document.getElementById("txtTelefono");
+        const txtciudad = document.getElementById("txtCiudad");
+        const txtcomentario = document.getElementById("txtComentario");
+
+        //ID del formulario y del boton
+        const contactform = document.getElementById("contactoform");
+        const btnEnviar = document.getElementById("btnenviar");
+        //Validacion de si esta vacio, si el email es valido o si el numero de telefono es de honduras
+        const isEmpty = /^\s*$/gm;
+        //const isValidEmail = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm;
+        const isValidHonduranCelPhone = /^\+?\(?(504)?\)?\s?[389]\d{3}[\-\s]?\d{4}$/gm;
+
+        btnEnviar.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            let hasError = false;
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtnombrecompleto.value)) {
+                alert("Error: El nombre completo es requerido.");
+                hasErrors = true;
+            }
+            //Si el correo no existe
+            if (isValidEmail.test(txtcorreo.value)) {
+                alert("Error: El correo no existe.");
+                hasErrors = true;
+            }
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtcorreo.value)) {
+                alert("Error: El correo es requerido.");
+                hasErrors = true;
+            }
+            //Si el campo esta vacio
+            if(isEmpty.test(txttelefono.value)){
+                alert("Error: El telefono es requerido.");
+                hasErrors = true;
+            }
+
+            //Si el num no es hondurenho
+            if (isValidHonduranCelPhone.test(txttelefono.value)) {
+               alert("Error: El telefono no es un celular hondureño válido.");
+               hasErrors = true;
+            }
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtciudad.value)) {
+                alert("Error: La ciudad es requerido.");
+                hasErrors = true;
+            }
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtcomentario.value)) {
+                alert("Error: Debe llenar la caja de comentario.");
+                hasErrors = true;
+            }
+
+            //Si no tiene errores
+            if (!hasError) {
+                contactForm.submit();
+            }
+        });
+
+
+    }*/
+
+
+
+
+
+
+</script>

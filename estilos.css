@@ -1,0 +1,152 @@
+* {
+    box-sizing: content-box;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*HEADER =====================================================================*/
+body header {
+    background-color: #00A651;
+    color: #fff;
+    position: relative;
+    overflow:hidden;
+    /* border: 3px solid #000;*/
+}
+
+body header h1 {
+    /*border: 3px solid #000;*/
+    width: 400px;
+    margin: 80px 50px 0px 50%;
+    font-size: 60px;
+}
+
+body header h1:hover {
+    transition: 3s all;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+body header div {
+    width: 150px;
+    height: 150px;
+    background-color: #00A651;
+}
+
+body header div img {
+    /*border: 2px solid #020258;*/
+    width: 165px;
+    height: 165px;
+    margin: 0px 0px 0px 80px;
+    transform: scale(2.2);
+}
+
+/*body header div img:hover{
+    transition: 1s all;
+    transform: scale(2.2);
+}*/
+
+body header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    margin: 0px 0px 0px 100px;
+    justify-content: end;
+    margin: 0 0 0 0;
+}
+
+body header nav ul li {
+    text-align: end;
+    border: 3px solid #fff;
+    margin: 5px;
+}
+
+body header nav ul li:hover {
+    transition: 1s all;
+    border: 3px solid #000;
+    transform: scale(1.1);
+}
+
+body header nav ul li a {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+body header nav ul li a:hover {
+    transition: 1s all;
+    color: #000;
+}
+
+/*FOOTER==============================================================================*/
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 250px;
+}
+
+footer h1 {
+    /*border: 3px solid blue;*/
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h1:hover {
+    transition: 1s all;
+    /*border: 3px solid #000;*/
+    transform: scale(1.2);
+}
+
+footer .contenedor-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+    color: white;
+}
+
+footer .contenedor-footer div {
+    /*border: 3px solid yellow;*/
+    margin: 0px 35px;
+    justify-content: center;
+    color: white;
+}
+
+footer .contenedor-footer div h2 {
+    /*border: 3px solid red;*/
+    font-size: 35px;
+    justify-content: center;
+    color: white;
+    text-decoration-color: #fff;
+}
+
+footer .contenedor-footer div h2 a {
+    text-decoration: white;
+    color: white;
+}
+
+footer .contenedor-footer div h2:hover {
+    text-decoration: solid;
+    transition: 1s all;
+    transform: scale(1.2);
+    color: white;
+}
+
+footer p {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    /*border: 3px solid red;*/
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+}
