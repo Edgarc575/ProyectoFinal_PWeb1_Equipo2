@@ -45,7 +45,7 @@
 
     <div class="contenedor-formulario">
         <h1>Nuestro equipo se pondrá en contacto contigo</h1>
-        <form action="https://formsubmit.co/edgardojosue456@gmail.com" method="POST">
+        <form action="https://formsubmit.co/edgardojosue456@gmail.com" method="POST" id="contactoform">
             <label for="txtNombre">Nombre completo:</label>
             <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" />
             <br />
@@ -53,7 +53,7 @@
             <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" />
             <br />
             <label for="txtTelefono">Teléfono</label>
-            <input type="text" name="Telefono" id="txtTelefono" placeholder="(504) XXXX-XXXX" />
+            <input type="text" name="Telefono" id="txtTelefono" placeholder="XXXX-XXXX" />
             <br />
             <fieldset>
                 <legend>Departamento</legend>
@@ -85,7 +85,7 @@
             <br />
             <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario"></textarea>
             <br />
-            <input type="submit" value="Enviar formulario">
+            <input type="submit" id="btnenviar" value="Enviar formulario">
         </form>
     </div>
 </body>
@@ -107,3 +107,85 @@
 </footer>
 
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+            formValidatorInit();
+    });
+
+    function formValidatorInit() {
+        //Campos del formulario
+        const txtnombrecompleto = document.getElementById("txtNombre");
+        const txtcorreo = document.getElementById("txtCorreo");
+        const txttelefono = document.getElementById("txtTelefono");
+        const txtciudad = document.getElementById("txtCiudad");
+        const txtcomentario = document.getElementById("txtComentario");
+
+        //ID del formulario y del boton
+        const contactform = document.getElementById("contactoform");
+        const btnEnviar = document.getElementById("btnenviar");
+        //Validacion de si esta vacio, si el email es valido o si el numero de telefono es de honduras
+        const isEmpty = /^\s*$/gm;
+        const isValidEmail = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm;
+        const isValidHonduranCelPhone = /^\+?\(?(504)?\)?\s?[389]\d{3}[\-\s]?\d{4}$/gm;
+
+        btnEnviar.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            let hasError = false;
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtnombrecompleto.value)) {
+                alert("Error: El nombre completo es requerido.");
+                hasErrors = true;
+            }
+            //Si el correo no existe
+            if (isValidEmail.test(txtcorreo.value)) {
+                alert("Error: El correo no existe.");
+                hasErrors = true;
+            }
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtcorreo.value)) {
+                alert("Error: El correo es requerido.");
+                hasErrors = true;
+            }
+            //Si el campo esta vacio
+            if(isEmpty.test(txttelefono.value)){
+                alert("Error: El telefono es requerido.");
+                hasErrors = true;
+            }
+
+            //Si el num no es hondurenho
+            if (isValidHonduranCelPhone.test(txttelefono.value)) {
+                alert("Error: El telefono no es un celular hondureño válido.");
+                hasErrors = true;
+            }
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtciudad.value)) {
+                alert("Error: La ciudad es requerido.");
+                hasErrors = true;
+            }
+
+            //Si el campo esta vacio
+            if (isEmpty.test(txtcomentario.value)) {
+                alert("Error: Debe llenar la caja de comentario.");
+                hasErrors = true;
+            }
+
+            //Si no tiene errores
+            if (!hasError) {
+                contactForm.submit();
+            }
+        });
+
+
+    }
+
+
+
+
+
+
+</script>
