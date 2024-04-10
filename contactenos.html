@@ -89,7 +89,7 @@
                 <br />
                 <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario"></textarea>
                 <br />
-                <input type="submit" id="btnenviar" value="Enviar formulario">
+                <input type="submit" id="btnenviar" value="Enviar formulario" onClick="mensaje()">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactenos.html">
                 <input type="hidden" name="_captcha" value="false">
             </form>
@@ -116,6 +116,12 @@
 </footer>
 
 </html>
+
+<script>
+    function mensaje(){
+        window.alert("¡Se ha enviado el formulario correctamente!");
+    }
+</script>
 
 <style>
     .contenedor-info {
@@ -162,6 +168,7 @@
     .contenedor-formulario {
         background-color: #00A651;
         padding-top: 20px;
+        border-bottom: 10px solid #fff;
     }
 
     .contenedor-formulario h1 {
