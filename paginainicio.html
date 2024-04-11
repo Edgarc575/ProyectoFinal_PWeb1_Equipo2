@@ -6,6 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="carrusel/carusel.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function (e) {
+            document.getElementById("blockJavascript").addEventListener("click", function () {
+                alert("Click desde Bloque");
+            });
+        });
+    </script>
+    <script src="carrusel/carusel.js"></script>
 </head>
 
 <body>
@@ -27,6 +36,30 @@
         </nav>
     </header>
     <main>
+        <section class="carusel">
+            <section class="caruseltrack">
+                <div class="caruselItem">
+                    <picture>
+                        <img src="Imagenes/carrusel1.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel2.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel3.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel4.png" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </section>
         <section class="inicio">
         <div class="historia">
             <h1>Historia de crecimiento de Parma's Pizza</h1>
