@@ -29,11 +29,16 @@
             color: #333;
         }
 
-        
+        .gallery-container {
+            background-image: url('imagenes/pizzawallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 20px;
             padding: 20px;
         }
@@ -41,12 +46,43 @@
         .gallery img {
             width: 100%;
             height: auto;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform-origin: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .gallery img:hover {
+            transform: rotate(-45deg) scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery img::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 10px solid #d9922e;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .titulo {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
     </style>
 </head>
 
 <body>
     <header>
+
         <h1>Parma's Pizza</h1>
         <div>
             <img src="Imagenes/logo.png" alt="Logo" />
@@ -63,32 +99,50 @@
             </ul>
         </nav>
     </header>
-
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300" alt="Imagen de muestra">
-        <img src="https://via.placeholder.com/300" alt="Imagen de muestra">
-        <img src="https://via.placeholder.com/300" alt="Imagen de muestra">
-        <img src="https://via.placeholder.com/300" alt="Imagen de muestra">
-        <img src="https://via.placeholder.com/300" alt="Imagen de muestra">
-        <img src="https://via.placeholder.com/300" alt="Imagen de muestra">
+    <div class="titulo">
+        <h1>Galeria de fotos</h1>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="imagenes/photo_4952164229809548469_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548470_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548471_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548472_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548473_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548474_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548475_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548476_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548477_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548480_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548482_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548484_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548487_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548493_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4951759137084124324_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548497_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548503_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548507_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548509_y.jpg" alt="Imagen de muestra">
+            <img src="imagenes/photo_4952164229809548510_y.jpg" alt="Imagen de muestra">
+        </div>
     </div>
 
     <footer>
         <h1>Parma's Pizza</h1>
         <div class="contenedor-footer">
-        <div>
-            <h2><a href="paginaredessociales.html">Siguenos en nuestras redes sociales</a></h2>
+            <div>
+                <h2><a href="paginaredessociales.html">Siguenos en nuestras redes sociales</a></h2>
+            </div>
+
+            <div>
+                <h2><a href="contactenos.html">Contactenos</a></h2>
+            </div>
+
+            <div>
+                <h2><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></h2>
+            </div>
         </div>
-    
-        <div>
-            <h2><a href="contactenos.html">Contactenos</a></h2>
-        </div>
-    
-        <div>
-            <h2><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></h2>
-        </div>
-        </div>
-    
+
         <p>© 2024 Parma's Pizza Todos los derechos reservados</p>
     </footer>
 
