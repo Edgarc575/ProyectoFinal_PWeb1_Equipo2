@@ -212,5 +212,334 @@ PARTE DE EVENTOS================================================================
     text-align: center;
 }
 
+/*
+PARTE DE MENU==============================================================================
+*/
+
+.container-detalle{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.cdp{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background: #D40F16;
+    color: #fff;
+}
+
+.TextLef{
+    text-align: start;
+    padding: 0px 0px 0px 2px;
+}
+
+.container-detalle-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.Textcenter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container-detalle-sub table{
+    border-collapse: collapse;
+}
+
+.container-detalle-sub thead tr{
+    background-color: #018A3D;
+    color: #fff;
+}
 
 
+.backgroundGreen{
+    padding: 0px 0px 0px 2px;
+    background: #018A3D;
+    color: #fff;
+}
+
+
+
+.precios{
+    text-align: center;
+    background: #D40F16;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 0px;
+    color: #F0E302;
+}
+
+.estilosMenu{
+    text-align: center;
+    padding: 5px;
+}
+
+.estilosMenu h1{
+    font-size: 24px;
+}
+
+.h1pt{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #D40F16;
+    color: #fff;
+    width: 100%;
+}
+
+.h1pt .h1pt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    background: #00A651;
+}
+
+
+.tamaniopizzas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tamaniopizzas-detalle{
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+    background:#018A3D;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tamaniopizzas-detalle img{
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+.colorp{
+    color: #F0E302;
+}
+
+.Entradas{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.Entradas-right{
+    background: #D40F16;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px;
+}
+
+.Entradas-right h2{
+    text-align: center;
+    padding: 5px;
+    background: #018A3D;
+    border-radius: 5px 5px 0 0;
+}
+
+.Entradas-left td{
+    text-align: center;
+}
+
+.Entradas2{
+    background: #018A3D;
+    color: #fff;
+}
+
+.Entradas-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Entradas-left-Detalle{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F0E302;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Entradas-left-Detalle h1{
+    text-align: center;
+    padding: 2px 0px 0px 0px;
+}
+
+.Entradas-left-Detalle .imgELD{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Entradas-left-Detalle .imgELD img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.Combos h1{
+    text-align: center;
+    background-color: #018A3D;
+    color: #fff;
+
+}
+
+.Combos-detalle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Combos-detalle .imgCombo{
+    padding: 0px;
+    margin: 5px;
+}
+
+.Combos-detalle .imgCombo img{
+    width: 250px;
+    height: 200px;
+}
+
+.Calzones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #018A3D;
+    color: #fff;
+    padding: 5px;
+    margin: 0px;
+}
+
+.Calzones table{
+    border-collapse: collapse;
+}
+
+.Calzones tbody tr{
+    cursor: pointer;
+}
+
+.Calzones tbody tr:hover{
+    background: #D40F16;
+}
+.Calzones h1{
+    text-align: center;
+}
+
+.Adicionales{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: #fff;
+    padding: 5px;
+    background: #D40F16;
+}
+
+.Adicionales h1{
+    text-align: center;
+}
+
+.Adicionales table{
+    border-collapse: collapse;
+}
+
+.Adicionales tbody tr{
+    cursor: pointer;
+}
+
+.Adicionales tbody tr:hover{
+    background: #018A3D;
+}
+
+.Refrescos{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: #fff;
+    padding: 5px;
+    background: #018A3D;
+}
+
+.Refrescos h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.Refrescos h2{
+    text-align: center;
+}
+
+.Refrescos h2{
+    font-size: 18px;
+}
+
+.Refrescos table{
+    border-collapse: collapse;
+}
+
+.Refrescos tbody tr{
+    cursor: pointer;
+}
+
+.Refrescos tbody tr:hover{
+    background: #D40F16;
+}
+
+.Cervezas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D40F16;
+    padding: 5px;
+    color: #fff;
+}
+
+.Cervezas h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.Cervezas table{
+    border-collapse: collapse;
+}
+
+.Cervezas tbody tr{
+    cursor: pointer;
+}
+
+.Cervezas tbody tr:hover{
+    background: #018A3D;
+}
