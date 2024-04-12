@@ -11,12 +11,12 @@ body {
 
 /*HEADER =====================================================================*/
 body header {
-    background-color: #00A651;
-    /*background-color: #009E60;*/
+    /*background-color: #00A651;*/
+    background-color: #009E60;
     color: #fff;
     position: relative;
     overflow: hidden;
-    /* border: 3px solid #000;*/
+    /*border-bottom: 3px solid #000;*/
 }
 
 body header h1 {
@@ -35,8 +35,8 @@ body header h1:hover {
 body header div {
     width: 150px;
     height: 150px;
-    background-color: #00A651;
-    /*background-color: #009E60;*/
+    /*background-color: #00A651;*/
+    background-color: #009E60;
 }
 
 body header div img {
@@ -66,7 +66,7 @@ body header nav ul li {
     text-align: end;
     border: 3px solid #fff;
     margin: 5px;
-    /* border-radius: 10px;*/
+    border-radius: 10px;
 }
 
 body header nav ul li:hover {
@@ -91,7 +91,7 @@ body header nav ul li a:hover {
 
 /*FOOTER==============================================================================*/
 footer {
-    background-color: #000;
+    background-color: #121212;
     width: 100%;
     height: 250px;
 }
@@ -163,6 +163,15 @@ PARTE DE EVENTOS================================================================
     display: block;
 }
 
+.Eventos .TextCenterPE{
+    color: #F2F2F7;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    background-color: #121212;
+}
+
 .Eventos .Eventos-container{
     display: flex;
     flex-wrap: wrap;
@@ -175,6 +184,12 @@ PARTE DE EVENTOS================================================================
     margin: 5px;
     width: 200px;
     color: #fff;
+}
+
+.Eventos .Eventos-container .Evento:hover{
+    transition: 0.5s all;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .Evento .imgEvento  {
@@ -207,7 +222,7 @@ PARTE DE EVENTOS================================================================
     margin: 0px;
     padding: 5px 0px 5px 0px;
     border-radius: 0 0 5px 5px;
-    background: #00A651;
+    background: #009E60;
 }
 
 .TextCenterPE{
@@ -218,6 +233,21 @@ PARTE DE EVENTOS================================================================
 /*
 PARTE DE MENU==============================================================================
 */
+.Menu{
+    background-color: #FFF;
+}
+
+.Menu .estilosMenu{
+    background-color: #121212;
+}
+.Menu .estilosMenu h1{
+    font-size: 35;
+    font-weight: bold;
+    color:#F2F2F7;
+}
+.Menu .estilosMenu p{
+    color: #F2F2F7;
+}
 
 .container-detalle{
     display: block;
@@ -229,7 +259,7 @@ PARTE DE MENU===================================================================
     text-align: center;
     padding: 5px;
     margin: 5px;
-    background: #D40F16;
+    background: #ED1C24;
     color: #fff;
 }
 
@@ -249,13 +279,14 @@ PARTE DE MENU===================================================================
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 5px;
 }
 
 .p{
     display: flex;
     justify-content: center;
     text-align: center;
-    background: red;
+    background: #ED1C24;
     color: #fff;
     border-radius: 5px;
     padding: 5px;
@@ -267,14 +298,14 @@ PARTE DE MENU===================================================================
 }
 
 .container-detalle-sub thead tr{
-    background-color: #018A3D;
+    background-color: #009E60;
     color: #fff;
 }
 
 
 .backgroundGreen{
     padding: 0px 0px 0px 2px;
-    background: #018A3D;
+    background: #009E60;
     color: #fff;
 }
 
@@ -282,7 +313,8 @@ PARTE DE MENU===================================================================
 
 .precios{
     text-align: center;
-    background: #D40F16;
+    /*background: #D40F16;*/
+    background-color: #ED1C24;
     padding: 10px;
     border-collapse: collapse;
     margin: 0px;
@@ -302,7 +334,7 @@ PARTE DE MENU===================================================================
     display: flex;
     justify-content: center;
     text-align: center;
-    background: #D40F16;
+    background: #ED1C24;
     color: #fff;
     width: 100%;
 }
@@ -314,7 +346,7 @@ PARTE DE MENU===================================================================
     text-align: center;
     width: 150px;
     padding: 5px;
-    background: #00A651;
+    background: #ED1C24;
 }
 
 
@@ -325,13 +357,20 @@ PARTE DE MENU===================================================================
     flex-wrap: wrap;
 }
 
+
 .tamaniopizzas-detalle{
     text-align: center;
     padding: 0px;
     margin: 5px;
-    background:#018A3D;
+    background:#009E60;
     color: #fff;
     border-radius: 5px;
+}
+
+.tamaniopizzas-detalle:hover{
+    transition: 1s all;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .tamaniopizzas-detalle img{
@@ -352,17 +391,23 @@ PARTE DE MENU===================================================================
 }
 
 .Entradas-right{
-    background: #D40F16;
+    background: #ED1C24;
     color: #fff;
     border-radius: 5px;
     margin: 5px;
     padding: 0px;
 }
 
+.Entradas-right:hover{
+    transform: scale(1.1);
+    transition: 1s all;
+    cursor: pointer;
+}
+
 .Entradas-right h2{
     text-align: center;
     padding: 5px;
-    background: #018A3D;
+    background: #009E60;
     border-radius: 5px 5px 0 0;
 }
 
@@ -371,8 +416,12 @@ PARTE DE MENU===================================================================
 }
 
 .Entradas2{
-    background: #018A3D;
+    background: #009E60;
     color: #fff;
+}
+
+.Textcenter{
+    background-color: #ED1C24;
 }
 
 .Entradas-left{
@@ -390,6 +439,13 @@ PARTE DE MENU===================================================================
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    background-color: #ED1C24;
+}
+
+.Entradas-left-Detalle:hover{
+    transition: 1s all;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .Entradas-left-Detalle h1{
@@ -411,11 +467,16 @@ PARTE DE MENU===================================================================
     object-fit: cover;
     width: 200px;
     height: 200px;
+    border-radius: 5px;
+}
+
+.TextLef{
+    background-color: #FFC162;
 }
 
 .Combos h1{
     text-align: center;
-    background-color: #018A3D;
+    background-color: #009E60;
     color: #fff;
 
 }
@@ -425,11 +486,19 @@ PARTE DE MENU===================================================================
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .Combos-detalle .imgCombo{
     padding: 0px;
     margin: 5px;
+    background-color:#F2F2F7;
+    border-radius: 10px;
+}
+
+.Combos-detalle .imgCombo:hover{
+    transition: 1s all;
+    transform: scale(1.1);
 }
 
 .Combos-detalle .imgCombo img{
@@ -441,14 +510,21 @@ PARTE DE MENU===================================================================
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #018A3D;
+    background: #009E60;
     color: #fff;
     padding: 5px;
     margin: 0px;
 }
 
+.Calzones-Detalle h1{
+    margin: 10px 0;
+    background-color: #ED1C24;
+    border-radius: 10px;
+}
+
 .Calzones table{
     border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
 .Calzones tbody tr{
@@ -456,7 +532,8 @@ PARTE DE MENU===================================================================
 }
 
 .Calzones tbody tr:hover{
-    background: #D40F16;
+    background: #ED1C24;
+    transition: 1s all;
 }
 .Calzones h1{
     text-align: center;
@@ -468,7 +545,13 @@ PARTE DE MENU===================================================================
     align-items:center ;
     color: #fff;
     padding: 5px;
-    background: #D40F16;
+    background: #ED1C24;
+}
+
+.Adicionales-Detalle h1{
+    margin: 10px 0;
+    background-color: #009E60;
+    border-radius: 10px;
 }
 
 .Adicionales h1{
@@ -477,6 +560,7 @@ PARTE DE MENU===================================================================
 
 .Adicionales table{
     border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
 .Adicionales tbody tr{
@@ -484,7 +568,8 @@ PARTE DE MENU===================================================================
 }
 
 .Adicionales tbody tr:hover{
-    background: #018A3D;
+    background: #009E60;
+    transition: 1s all;
 }
 
 .Refrescos{
@@ -493,7 +578,13 @@ PARTE DE MENU===================================================================
     align-items:center ;
     color: #fff;
     padding: 5px;
-    background: #018A3D;
+    background: #009E60;
+}
+
+.Refrescos-Detalle h1{
+    margin: 10px 0;
+    background-color: #ED1C24;
+    border-radius: 10px;
 }
 
 .Refrescos h1{
@@ -511,6 +602,7 @@ PARTE DE MENU===================================================================
 
 .Refrescos table{
     border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
 .Refrescos tbody tr{
@@ -518,16 +610,23 @@ PARTE DE MENU===================================================================
 }
 
 .Refrescos tbody tr:hover{
-    background: #D40F16;
+    background: #ED1C24;
+    transition: 1s all;
 }
 
 .Cervezas{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D40F16;
+    background-color: #ED1C24;
     padding: 5px;
     color: #fff;
+}
+
+.Cervezas-Detalles h1{
+    margin: 10px 0;
+    background-color: #009E60;
+    border-radius: 10px;
 }
 
 .Cervezas h1{
@@ -537,6 +636,7 @@ PARTE DE MENU===================================================================
 
 .Cervezas table{
     border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
 .Cervezas tbody tr{
@@ -544,13 +644,14 @@ PARTE DE MENU===================================================================
 }
 
 .Cervezas tbody tr:hover{
-    background: #018A3D;
+    background: #009E60;
+    transition: 1s all;
 }
 
 /*iniciopagina==============================================================================*/
 
 .inicio {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 50px 20px;
     text-align: center;
 }
@@ -558,6 +659,8 @@ PARTE DE MENU===================================================================
 .inicio > div {
     margin: 20px auto;
     max-width: 800px;
+    background-color: #F2F2F7;
+    border-radius: 10px;
 }
 
 .inicio h1 {
