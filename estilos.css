@@ -22,7 +22,7 @@ body header {
 body header h1 {
     /*border: 3px solid #000;*/
     width: 400px;
-    margin: 80px 50px 0px 50%;
+    margin: 80px 50px 0px 800px;
     font-size: 60px;
 }
 
@@ -154,16 +154,146 @@ footer p {
     margin: 50px 0px 0px 0px;
 }
 
+/*RESPONSIVE DESIGN HEADER AND FOOTER*/
+@media(max-width: 910px) {
+
+    /*Responsive header*/
+    body header {
+        /*background-color: #00A651;*/
+        background-color: #009E60;
+        color: #fff;
+        /*border-bottom: 3px solid #000;*/
+    }
+
+    body header h1 {
+        /*border: 3px solid #000;*/
+        align-items: center;
+        text-align: center;
+        margin-right: 800px;
+        font-size: 80px;
+    }
+
+    body header div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 280px;
+        width: 100%;
+    }
+
+    body header div img {
+        /*border: 2px solid #020258;*/
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /*body header div img:hover{
+    transition: 1s all;
+    transform: scale(2.2);
+}*/
+    body header nav ul {
+        padding-top: 20px;
+    }
+
+    body header nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0px;
+        margin: 0px 0px 0px 100px;
+        justify-content: end;
+        margin: 0 0 0 0;
+    }
+
+    body header nav ul li {
+        text-align: end;
+        border: 3px solid #fff;
+        margin: 5px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    body header nav ul li a {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Responsive design Footer*/
+    footer {
+        background-color: #121212;
+        width: 100%;
+        height: 600px;
+    }
+
+    footer h1 {
+        /*border: 3px solid blue;*/
+        color: white;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px 0px 0px 0px;
+        color: white;
+    }
+
+    footer .contenedor-footer div {
+        /*border: 3px solid yellow;*/
+        margin: 0px 35px;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    footer .contenedor-footer div h2 {
+        /*border: 3px solid red;*/
+        font-size: 35px;
+        justify-content: center;
+        color: white;
+        text-decoration-color: #fff;
+    }
+
+    footer .contenedor-footer div h2 a {
+        text-decoration: white;
+        color: white;
+    }
+
+    footer p {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        /*border: 3px solid red;*/
+        justify-content: center;
+        margin: 50px 0px 0px 0px;
+        text-align: center;
+    }
+
+}
+
+
+
 
 /*
 PARTE DE EVENTOS==============================================================================
 */
 
-.Eventos{
+.Eventos {
     display: block;
 }
 
-.Eventos .TextCenterPE{
+.Eventos .TextCenterPE {
     color: #F2F2F7;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -172,13 +302,13 @@ PARTE DE EVENTOS================================================================
     background-color: #121212;
 }
 
-.Eventos .Eventos-container{
+.Eventos .Eventos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.Eventos .Eventos-container .Evento{
+.Eventos .Eventos-container .Evento {
     border-radius: 5px;
     padding: 0px;
     margin: 5px;
@@ -186,30 +316,30 @@ PARTE DE EVENTOS================================================================
     color: #fff;
 }
 
-.Eventos .Eventos-container .Evento:hover{
+.Eventos .Eventos-container .Evento:hover {
     transition: 0.5s all;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.Evento .imgEvento  {
+.Evento .imgEvento {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imgEvento img{
+.imgEvento img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.TextCenter{
+.TextCenter {
     text-align: center;
 }
 
 
-.TextCenterAnio{
+.TextCenterAnio {
     border-radius: 5px 5px 0 0;
     padding: 5px;
     margin: 0px;
@@ -218,14 +348,14 @@ PARTE DE EVENTOS================================================================
     text-align: center;
 }
 
-.TextEvento{
+.TextEvento {
     margin: 0px;
     padding: 5px 0px 5px 0px;
     border-radius: 0 0 5px 5px;
     background: #009E60;
 }
 
-.TextCenterPE{
+.TextCenterPE {
     padding: 5px 0px 0px 0px;
     text-align: center;
 }
@@ -233,29 +363,31 @@ PARTE DE EVENTOS================================================================
 /*
 PARTE DE MENU==============================================================================
 */
-.Menu{
+.Menu {
     background-color: #FFF;
 }
 
-.Menu .estilosMenu{
+.Menu .estilosMenu {
     background-color: #121212;
 }
-.Menu .estilosMenu h1{
+
+.Menu .estilosMenu h1 {
     font-size: 35;
     font-weight: bold;
-    color:#F2F2F7;
-}
-.Menu .estilosMenu p{
     color: #F2F2F7;
 }
 
-.container-detalle{
+.Menu .estilosMenu p {
+    color: #F2F2F7;
+}
+
+.container-detalle {
     display: block;
     justify-content: center;
     align-items: center;
 }
 
-.cdp{
+.cdp {
     text-align: center;
     padding: 5px;
     margin: 5px;
@@ -263,26 +395,26 @@ PARTE DE MENU===================================================================
     color: #fff;
 }
 
-.TextLef{
+.TextLef {
     text-align: start;
     padding: 0px 0px 0px 2px;
 }
 
-.container-detalle-sub{
+.container-detalle-sub {
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
 }
 
-.Textcenter{
+.Textcenter {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 5px;
 }
 
-.p{
+.p {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -293,17 +425,17 @@ PARTE DE MENU===================================================================
     margin: 5px;
 }
 
-.container-detalle-sub table{
+.container-detalle-sub table {
     border-collapse: collapse;
 }
 
-.container-detalle-sub thead tr{
+.container-detalle-sub thead tr {
     background-color: #009E60;
     color: #fff;
 }
 
 
-.backgroundGreen{
+.backgroundGreen {
     padding: 0px 0px 0px 2px;
     background: #009E60;
     color: #fff;
@@ -311,7 +443,7 @@ PARTE DE MENU===================================================================
 
 
 
-.precios{
+.precios {
     text-align: center;
     /*background: #D40F16;*/
     background-color: #ED1C24;
@@ -321,16 +453,16 @@ PARTE DE MENU===================================================================
     color: #F0E302;
 }
 
-.estilosMenu{
+.estilosMenu {
     text-align: center;
     padding: 5px;
 }
 
-.estilosMenu h1{
+.estilosMenu h1 {
     font-size: 24px;
 }
 
-.h1pt{
+.h1pt {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -339,7 +471,7 @@ PARTE DE MENU===================================================================
     width: 100%;
 }
 
-.h1pt .h1pt2{
+.h1pt .h1pt2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,7 +482,7 @@ PARTE DE MENU===================================================================
 }
 
 
-.tamaniopizzas{
+.tamaniopizzas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,39 +490,39 @@ PARTE DE MENU===================================================================
 }
 
 
-.tamaniopizzas-detalle{
+.tamaniopizzas-detalle {
     text-align: center;
     padding: 0px;
     margin: 5px;
-    background:#009E60;
+    background: #009E60;
     color: #fff;
     border-radius: 5px;
 }
 
-.tamaniopizzas-detalle:hover{
+.tamaniopizzas-detalle:hover {
     transition: 1s all;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.tamaniopizzas-detalle img{
+.tamaniopizzas-detalle img {
     border-radius: 5px;
     width: 100px;
     height: 100px;
     padding: 5px;
 }
 
-.colorp{
+.colorp {
     color: #F0E302;
 }
 
-.Entradas{
+.Entradas {
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
 }
 
-.Entradas-right{
+.Entradas-right {
     background: #ED1C24;
     color: #fff;
     border-radius: 5px;
@@ -398,40 +530,40 @@ PARTE DE MENU===================================================================
     padding: 0px;
 }
 
-.Entradas-right:hover{
+.Entradas-right:hover {
     transform: scale(1.1);
     transition: 1s all;
     cursor: pointer;
 }
 
-.Entradas-right h2{
+.Entradas-right h2 {
     text-align: center;
     padding: 5px;
     background: #009E60;
     border-radius: 5px 5px 0 0;
 }
 
-.Entradas-left td{
+.Entradas-left td {
     text-align: center;
 }
 
-.Entradas2{
+.Entradas2 {
     background: #009E60;
     color: #fff;
 }
 
-.Textcenter{
+.Textcenter {
     background-color: #ED1C24;
 }
 
-.Entradas-left{
+.Entradas-left {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.Entradas-left-Detalle{
+.Entradas-left-Detalle {
     display: block;
     justify-content: center;
     align-items: center;
@@ -442,18 +574,18 @@ PARTE DE MENU===================================================================
     background-color: #ED1C24;
 }
 
-.Entradas-left-Detalle:hover{
+.Entradas-left-Detalle:hover {
     transition: 1s all;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.Entradas-left-Detalle h1{
+.Entradas-left-Detalle h1 {
     text-align: center;
     padding: 2px 0px 0px 0px;
 }
 
-.Entradas-left-Detalle .imgELD{
+.Entradas-left-Detalle .imgELD {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -461,7 +593,7 @@ PARTE DE MENU===================================================================
     margin: 0px;
 }
 
-.Entradas-left-Detalle .imgELD img{
+.Entradas-left-Detalle .imgELD img {
     display: block;
     height: 100%;
     object-fit: cover;
@@ -470,18 +602,18 @@ PARTE DE MENU===================================================================
     border-radius: 5px;
 }
 
-.TextLef{
+.TextLef {
     background-color: #FFC162;
 }
 
-.Combos h1{
+.Combos h1 {
     text-align: center;
     background-color: #009E60;
     color: #fff;
 
 }
 
-.Combos-detalle{
+.Combos-detalle {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -489,24 +621,24 @@ PARTE DE MENU===================================================================
     background-color: #fff;
 }
 
-.Combos-detalle .imgCombo{
+.Combos-detalle .imgCombo {
     padding: 0px;
     margin: 5px;
-    background-color:#F2F2F7;
+    background-color: #F2F2F7;
     border-radius: 10px;
 }
 
-.Combos-detalle .imgCombo:hover{
+.Combos-detalle .imgCombo:hover {
     transition: 1s all;
     transform: scale(1.1);
 }
 
-.Combos-detalle .imgCombo img{
+.Combos-detalle .imgCombo img {
     width: 250px;
     height: 200px;
 }
 
-.Calzones{
+.Calzones {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,105 +648,106 @@ PARTE DE MENU===================================================================
     margin: 0px;
 }
 
-.Calzones-Detalle h1{
+.Calzones-Detalle h1 {
     margin: 10px 0;
     background-color: #ED1C24;
     border-radius: 10px;
 }
 
-.Calzones table{
+.Calzones table {
     border-collapse: collapse;
     margin-bottom: 10px;
 }
 
-.Calzones tbody tr{
+.Calzones tbody tr {
     cursor: pointer;
 }
 
-.Calzones tbody tr:hover{
+.Calzones tbody tr:hover {
     background: #ED1C24;
     transition: 1s all;
 }
-.Calzones h1{
+
+.Calzones h1 {
     text-align: center;
 }
 
-.Adicionales{
+.Adicionales {
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     color: #fff;
     padding: 5px;
     background: #ED1C24;
 }
 
-.Adicionales-Detalle h1{
+.Adicionales-Detalle h1 {
     margin: 10px 0;
     background-color: #009E60;
     border-radius: 10px;
 }
 
-.Adicionales h1{
+.Adicionales h1 {
     text-align: center;
 }
 
-.Adicionales table{
+.Adicionales table {
     border-collapse: collapse;
     margin-bottom: 10px;
 }
 
-.Adicionales tbody tr{
+.Adicionales tbody tr {
     cursor: pointer;
 }
 
-.Adicionales tbody tr:hover{
+.Adicionales tbody tr:hover {
     background: #009E60;
     transition: 1s all;
 }
 
-.Refrescos{
+.Refrescos {
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     color: #fff;
     padding: 5px;
     background: #009E60;
 }
 
-.Refrescos-Detalle h1{
+.Refrescos-Detalle h1 {
     margin: 10px 0;
     background-color: #ED1C24;
     border-radius: 10px;
 }
 
-.Refrescos h1{
+.Refrescos h1 {
     font-size: 24px;
     text-align: center;
 }
 
-.Refrescos h2{
+.Refrescos h2 {
     text-align: center;
 }
 
-.Refrescos h2{
+.Refrescos h2 {
     font-size: 18px;
 }
 
-.Refrescos table{
+.Refrescos table {
     border-collapse: collapse;
     margin-bottom: 10px;
 }
 
-.Refrescos tbody tr{
+.Refrescos tbody tr {
     cursor: pointer;
 }
 
-.Refrescos tbody tr:hover{
+.Refrescos tbody tr:hover {
     background: #ED1C24;
     transition: 1s all;
 }
 
-.Cervezas{
+.Cervezas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -623,27 +756,27 @@ PARTE DE MENU===================================================================
     color: #fff;
 }
 
-.Cervezas-Detalles h1{
+.Cervezas-Detalles h1 {
     margin: 10px 0;
     background-color: #009E60;
     border-radius: 10px;
 }
 
-.Cervezas h1{
+.Cervezas h1 {
     font-size: 24px;
     text-align: center;
 }
 
-.Cervezas table{
+.Cervezas table {
     border-collapse: collapse;
     margin-bottom: 10px;
 }
 
-.Cervezas tbody tr{
+.Cervezas tbody tr {
     cursor: pointer;
 }
 
-.Cervezas tbody tr:hover{
+.Cervezas tbody tr:hover {
     background: #009E60;
     transition: 1s all;
 }
@@ -656,7 +789,7 @@ PARTE DE MENU===================================================================
     text-align: center;
 }
 
-.inicio > div {
+.inicio>div {
     margin: 20px auto;
     max-width: 800px;
     background-color: #F2F2F7;
@@ -685,4 +818,3 @@ PARTE DE MENU===================================================================
 .inicio a:hover {
     color: #0056b3;
 }
-
