@@ -251,6 +251,56 @@
         border: 3px solid #FFDE17;
         background-color: #FFDE17;
     }
+
+    /*Responsive Design contacto*/
+    @media(max-width: 893px) {
+        .contenedor-formulario {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        form .titulo-formulario {
+            font-size: 45px;
+            color: #000;
+        }
+
+        form label {
+            color: #333;
+            margin: 10px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        form select {
+            font-size: 15px;
+            color: #555;
+            display: block;
+            margin: 0 0 20px;
+            padding: 25px 25px;
+            width: 50%;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 3px solid #00A651;
+        }
+
+        form textarea {
+            font-size: 15px;
+        }
+
+        form input {
+            display: block;
+            margin: 0 0 20px;
+            padding: 25px 25px;
+            width: 50%;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 3px solid #00A651;
+            align-items: center;
+        }
+
+    }
 </style>
 
 <script>
