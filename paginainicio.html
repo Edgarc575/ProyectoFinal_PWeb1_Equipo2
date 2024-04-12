@@ -6,6 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="carrusel/carusel.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function (e) {
+            document.getElementById("blockJavascript").addEventListener("click", function () {
+                alert("Click desde Bloque");
+            });
+        });
+    </script>
+    <script src="carrusel/carusel.js"></script>
 </head>
 
 <body>
@@ -27,6 +36,30 @@
         </nav>
     </header>
     <main>
+        <section class="carusel">
+            <section class="caruseltrack">
+                <div class="caruselItem">
+                    <picture>
+                        <img src="Imagenes/carrusel1.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel2.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel3.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel4.png" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </section>
         <section class="inicio">
         <div class="historia">
             <h1>Historia de crecimiento de Parma's Pizza</h1>
@@ -43,14 +76,14 @@
                 nacido en Sicilia Italia.</p>
         </div>
         <div class="mision">
-            <h1>Mision</h1>
+            <h1>Misión</h1>
             <p>En Parmas Pizza, nos comprometemos a ofrecer a nuestros clientes la mejor experiencia gastronomica,
                 proporcionando pizzas de alta calidad que deleiten sus paladares y creen momentos memorables para
                 compartir con sus seres queridos. Nos esforzamos por mantener los estandares mas altos en cada pizza que
                 servimos, fusionando la tradicion italiana con un toque de creatividad y frescura en cada ingrediente</p>
         </div>
         <div class="vision">
-            <h1>vision</h1>
+            <h1>Visión</h1>
             <p>Nuestra visión es liderar el mercado de pizzas con
                 excelencia en calidad, servicio y compromiso con la
                 satisfacción del cliente. Buscamos expandirnos con

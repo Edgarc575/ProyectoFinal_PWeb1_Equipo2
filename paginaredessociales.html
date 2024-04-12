@@ -6,6 +6,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .redes-sociales {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .redes-sociales h1 {
+            margin-bottom: 20px;
+        }
+
+        .redes-sociales p {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .redes-sociales ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .redes-sociales ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .redes-sociales ul li a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .redes-sociales ul li a img {
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .redes-sociales ul li a p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .redes-sociales ul li a:hover img {
+            transform: scale(1.1);
+        }
+
+       
+    </style>
 </head>
 
 <body>
@@ -26,24 +101,48 @@
             </ul>
         </nav>
     </header>
+
+    <section class="redes-sociales">
+        <h1>Redes Sociales</h1>
+        <p>¡Mantente al día con nuestras últimas ofertas y novedades siguiéndonos en nuestras redes sociales!</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/parmaspizza?locale=es_LA" target="_blank">
+                    <img src="Imagenes/facebook.png" alt="Facebook">
+                    <p>Facebook</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/message/SVQ5HANIOCCEG1?autoload=1&app_absent=0" target="_blank">
+                    <img src="Imagenes/whatsapp.png" alt="Whatsapp">
+                    <p>Whatsapp</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/parmaspizza?igsh=bGpuMDA0ajZsamdq" target="_blank">
+                    <img src="Imagenes/instagram.png" alt="Instagram">
+                    <p>Instagram</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <h1>Parma's Pizza</h1>
+        <div class="contenedor-footer">
+        
+    
+        <div>
+            <h2><a href="contactenos.html">Contactenos</a></h2>
+        </div>
+    
+        <div>
+            <h2><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></h2>
+        </div>
+        </div>
+    
+        <p>© 2024 Parma's Pizza Todos los derechos reservados</p>
+    </footer>
 </body>
-<footer>
-    <h1>Parma's Pizza</h1>
-    <div class="contenedor-footer">
-    <div>
-        <h2><a href="paginaredessociales.html">Siguenos en nuestras redes sociales</a></h2>
-    </div>
-
-    <div>
-        <h2><a href="contactenos.html">Contactenos</a></h2>
-    </div>
-
-    <div>
-        <h2><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></h2>
-    </div>
-    </div>
-
-    <p>© 2024 Parma's Pizza Todos los derechos reservados</p>
-</footer>
 
 </html>
