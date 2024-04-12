@@ -12,9 +12,10 @@ body {
 /*HEADER =====================================================================*/
 body header {
     background-color: #00A651;
+    /*background-color: #009E60;*/
     color: #fff;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     /* border: 3px solid #000;*/
 }
 
@@ -35,6 +36,7 @@ body header div {
     width: 150px;
     height: 150px;
     background-color: #00A651;
+    /*background-color: #009E60;*/
 }
 
 body header div img {
@@ -64,6 +66,7 @@ body header nav ul li {
     text-align: end;
     border: 3px solid #fff;
     margin: 5px;
+    /* border-radius: 10px;*/
 }
 
 body header nav ul li:hover {
@@ -543,3 +546,40 @@ PARTE DE MENU===================================================================
 .Cervezas tbody tr:hover{
     background: #018A3D;
 }
+
+/*iniciopagina==============================================================================*/
+
+.inicio {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.inicio > div {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.inicio h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.inicio a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.inicio a:hover {
+    color: #0056b3;
+}
+
