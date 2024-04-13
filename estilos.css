@@ -876,3 +876,68 @@ PARTE DE MENU===================================================================
     height: 70px;
     padding: 0 20px;
 }
+/*RESPONSIVE DESIGN Pizzas Menu*/
+@media(max-width: 575px) {
+
+    .container-detalle thead{
+        display: none;
+    }
+
+
+    .container-detalle-sub, .container-detalle-sub .table tbody{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-detalle-sub td{
+        display: block;
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    .backgroundGreen{
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        padding: 2px;
+    }
+
+    .container-detalle-sub .table tbody tr .precios{
+        text-align: right;
+        position: relative;
+        width: 180px;
+    }
+
+    .container-detalle-sub .table tbody tr{
+        padding-top: 5px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    #borderResponsive{
+        border-radius: 0 0 10px 10px;
+    }
+
+     .table td::before{
+        content: attr(data-label);
+        position:absolute;
+        left: 0;
+        color: #F2F2F7;
+        width: 10%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .ResponsivePuntos{
+        display: none;
+    }
+
+    .table .precios:hover{
+        cursor: pointer;
+        background: #FFC162;
+        transition: 1s all;
+        color: #FFF;
+    }
+}
