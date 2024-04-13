@@ -52,14 +52,14 @@
             <form action="https://formsubmit.co/lospanitas444@gmail.com" method="POST" id="contactoform">
                 <label class="titulo-formulario">Formulario</label>
                 <label for="txtNombre">Nombre completo:</label>
-                <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" />
+                <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" required pattern=".*\S.*"/>
                 <br />
                 <label for="txtCorreo">Correo:</label>
                 <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" required
                     pattern=".*@gmail.com$" />
                 <br />
                 <label for="txtTelefono">Teléfono:</label>
-                <input type="text" name="Telefono" id="txtTelefono" placeholder="(504) XXXX-XXXX" />
+                <input type="text" name="Telefono" id="txtTelefono" placeholder="(504) XXXX-XXXX" required pattern=".*\S.*"/>
                 <br />
                 <label for="txtDepartamento">Departamento:</label>
                 <select name="Departamento">
@@ -85,13 +85,15 @@
                 </select>
                 <br />
                 <label for="txtCiudad">Ciudad:</label>
-                <input type="text" name="Ciudad" id="txtCiudad" placeholder="Ciudad" />
+                <input type="text" name="Ciudad" id="txtCiudad" placeholder="Ciudad" required pattern=".*\S.*"/>
                 <br />
                 <label for="txtComentario">Comentario:</label>
                 <br />
-                <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario"></textarea>
+                <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario" required pattern=".*\S.*"></textarea>
                 <br />
-                <input type="submit" id="btnenviar" value="Enviar formulario" onClick="mensaje()">
+                <input type="submit" id="btnenviar" value="Enviar formulario" onClick="">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/contactenos.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </div>
@@ -296,8 +298,8 @@
 </style>
 
 <script>
-    function mensaje(){
-        window.alert("¡Se ha enviado el formulario correctamente!");
+    /*function mensaje(){
+         window.alert("¡Se ha enviado el formulario correctamente!");
     }
 
 </script>
@@ -332,56 +334,34 @@
             //Si el campo esta vacio
             if (isEmpty.test(txtnombrecompleto.value)) {
                 alert("Error: El nombre completo es requerido.");
-                document.getElementById("contactoform").reset();
                 hasErrors = true;
             }else
-            //Si el correo no existe
-            /*if (isValidEmail.test(txtcorreo.value)) {
-                alert("Error: El correo no existe.");
-                hasErrors = true;
-            }*/
-
             //Si el campo esta vacio
-            /*if (isEmpty.test(txtcorreo.value)) {
+            if (isEmpty.test(txtcorreo.value)) {
                 alert("Error: El correo es requerido.");
                 hasErrors = true;
             }
-            else*/
+            else
             //Si el campo esta vacio
-           /* if(isEmpty.test(txttelefono.value)){
+           if(isEmpty.test(txttelefono.value)){
                 alert("Error: El telefono es requerido.");
-                document.getElementById("contactoform").reset();
                 hasErrors = true;
             }else
-
-            //Si el num no es hondurenho
-            /*if (isValidHonduranCelPhone.test(txttelefono.value)) {
-               alert("Error: El telefono no es un celular hondureño válido.");
-               hasErrors = true;
-            }*/
-
             //Si el campo esta vacio
-           /* if (isEmpty.test(txtciudad.value)) {
+            if (isEmpty.test(txtciudad.value)) {
                 alert("Error: La ciudad es requerido.");
-                document.getElementById("contactoform").reset();
                 hasErrors = true;
             }else
 
             //Si el campo esta vacio
             if (isEmpty.test(txtcomentario.value)) {
                 alert("Error: Debe llenar la caja de comentario.");
-                document.getElementById("contactoform").reset();
                 hasErrors = true;
             }
             else{
                 window.alert("¡Se ha enviado el formulario correctamente!");
-                document.getElementById("contactoform").reset();
             }
-
-            //Si no tiene errores
-           /*if (!hasError) {
-            }*/
-       /* });
+        });
 
 
     }*/
