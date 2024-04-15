@@ -154,6 +154,16 @@ footer p {
     margin: 50px 0px 0px 0px;
 }
 
+@media(max-width: 1087px) and (min-width: 911px){
+    body header div img {
+        /*border: 2px solid #020258;*/
+        width: 140px;
+        height: 140px;
+        margin: 0px 0px 0px 80px;
+        transform: scale(1.6);
+    }
+}
+
 /*RESPONSIVE DESIGN HEADER AND FOOTER*/
 @media(max-width: 910px) {
 
