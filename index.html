@@ -1,7 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
+<head>
+    <title>Pagina: Inicio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="carrusel/carusel.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function (e) {
+            document.getElementById("blockJavascript").addEventListener("click", function () {
+                alert("Click desde Bloque");
+            });
+        });
+    </script>
+    <script src="carrusel/carusel.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class=".titulo-parmas-pizza">
+            <h1>Parma's Pizza</h1>
+        </div>
+        <div>
+            <img src="Imagenes/logo.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="paginainicio.html">Inicio</a></li>
+                <li><a href="acercanosotros.html">Acerca de nosotros</a></li>
+                <li><a href="galeriafotos.html">Galeria de fotos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contactenos.html">Contacto</a></li>
+                <li><a href="catalogomenu.html">Catálogo Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carusel">
+            <section class="caruseltrack">
+                <div class="caruselItem">
+                    <picture>
+                        <img src="Imagenes/carrusel1.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel2.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel3.png" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <img data-srcset="Imagenes/carrusel4.png" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </section>
+        <section class="inicio">
+            <div class="historia">
+                <h1>Historia de crecimiento de Parma's Pizza</h1>
+                <p>En el año de 1997 venia en camino el ultimo de
+                    cinco hermanos que por nombre le pusieron
+                    Abraham Isaías Talavera Galdamez. Nacido en
+                    un año muy difícil para la economía nacional
+                    dado que fue en ese entonces que paso la
+                    Huracán Mitch. Fue ahí donde sus padres
+                    tomaron la decisión de como poder salir
+                    adelante con cinco hijos, siendo así mi papa
+                    tomo la decisión de poner su conocimiento
+                    adquirido por medio de mi tio Vicente Rinaudo
+                    nacido en Sicilia Italia.</p>
+            </div>
+            <div class="mision">
+                <h1>Misión</h1>
+                <p>En Parmas Pizza, nos comprometemos a ofrecer a nuestros clientes la mejor experiencia gastronomica,
+                    proporcionando pizzas de alta calidad que deleiten sus paladares y creen momentos memorables para
+                    compartir con sus seres queridos. Nos esforzamos por mantener los estandares mas altos en cada pizza
+                    que
+                    servimos, fusionando la tradicion italiana con un toque de creatividad y frescura en cada
+                    ingrediente</p>
+            </div>
+            <div class="vision">
+                <h1>Visión</h1>
+                <p>Nuestra visión es liderar el mercado de pizzas con
+                    excelencia en calidad, servicio y compromiso con la
+                    satisfacción del cliente. Buscamos expandirnos con
+                    cinco nuevos locales y llegar a mercados
+                    internacionales, manteniendo nuestra autenticidad e
+                    innovación. Nos comprometemos a utilizar nuevas
+                    tecnologías para mejorar nuestra oferta y experiencia
+                    culinaria, asegurando que cada pizza refleje nuestra
+                    pasión por redefinir el sabor y la experiencia. Nos
+                    proyectamos como pioneros, siempre buscando
+                    nuevas oportunidades para deleitar a nuestros
+                    clientes y consolidar un legado de calidad que
+                    perdure generaciones.</p>
+            </div>
+        </section>
+    </main>
 </body>
+<footer>
+    <h1>Parma's Pizza</h1>
+    <div class="contenedor-footer">
+        <div>
+            <h2><a href="paginaredessociales.html">Siguenos en nuestras redes sociales</a></h2>
+        </div>
+
+        <div>
+            <h2><a href="contactenos.html">Contactenos</a></h2>
+        </div>
+
+        <div>
+            <h2><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></h2>
+        </div>
+    </div>
+
+    <p>© 2024 Parma's Pizza Todos los derechos reservados</p>
+</footer>
+
 </html>
